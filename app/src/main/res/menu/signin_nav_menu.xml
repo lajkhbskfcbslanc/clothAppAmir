@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/signinMenu"
+        android:title="sign in"
+        app:showAsAction="always"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearance="@style/nav_text_style"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/signupMenu"
+        android:title="sign up"
+        app:itemTextAppearance="@style/nav_text_style"
+        app:showAsAction="ifRoom"
+        android:enabled="true"/>
+
+</menu>

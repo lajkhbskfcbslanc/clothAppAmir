@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/newitem_recycleview_style">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/newitem_recycleview_style">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/luckies_guy"
+                android:background="@drawable/newitem_picture"
+                android:gravity="center"
+                android:text="new"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp" />
+            <ImageView
+                android:id="@+id/newProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/shoe_test"
+                android:layout_weight="0.7"></ImageView>
+            <TextView
+                android:id="@+id/newNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/helveta"
+                android:text="shoesforyou"
+                android:layout_gravity="center"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newPriceText"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorGreyDark"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="priceforyour"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

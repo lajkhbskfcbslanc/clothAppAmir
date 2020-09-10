@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShoesFrag">
+    <LinearLayout
+        android:id="@+id/shoesup"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-43dp"
+            android:layout_marginRight="-100dp"
+            android:fontFamily="@font/luckies_guy"
+            android:gravity="right"
+            android:rotation="90"
+            android:text="best seller"
+            android:textSize="21sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shoesHolderRec"
+            android:backgroundTint="#00FFFFFF"
+            android:layout_width="match_parent"
+            app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager"
+            app:cardWidth="335dp"
+            app:cardsGap="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGreyLight"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/shoesDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new item"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/luckies_guy"
+            android:textSize="20sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/newItemShoesHolderRec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

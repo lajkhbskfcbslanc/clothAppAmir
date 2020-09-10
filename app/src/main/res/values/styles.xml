@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="blueAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackBlue</item>
+        <item name="colorPrimaryDark">@color/productBackBlue</item>
+        <item name="colorAccent">@color/productBackBlue</item>
+    </style>
+    <style name="purpleAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackPurple</item>
+        <item name="colorPrimaryDark">@color/productBackPurple</item>
+        <item name="colorAccent">@color/productBackPurple</item>
+    </style>
+    <style name="pinkAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackPink</item>
+        <item name="colorPrimaryDark">@color/productBackPink</item>
+        <item name="colorAccent">@color/productBackPink</item>
+    </style>
+    <style name="redAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackRed</item>
+        <item name="colorPrimaryDark">@color/productBackRed</item>
+        <item name="colorAccent">@color/productBackRed</item>
+    </style>
+    <style name="blackAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackBlack</item>
+        <item name="colorPrimaryDark">@color/productBackBlack</item>
+        <item name="colorAccent">@color/productBackBlack</item>
+    </style>
+    <style name="greyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackGrey</item>
+        <item name="colorPrimaryDark">@color/productBackGrey</item>
+        <item name="colorAccent">@color/productBackGrey</item>
+    </style>
+    <style name="brownAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackBrown</item>
+        <item name="colorPrimaryDark">@color/productBackBrown</item>
+        <item name="colorAccent">@color/productBackBrown</item>
+    </style>
+    <style name="orangeAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackOrange</item>
+        <item name="colorPrimaryDark">@color/productBackOrange</item>
+        <item name="colorAccent">@color/productBackOrange</item>
+    </style>
+    <style name="yellowAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackYellow</item>
+        <item name="colorPrimaryDark">@color/productBackYellow</item>
+        <item name="colorAccent">@color/productBackYellow</item>
+    </style>
+    <style name="greenAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/productBackGreen</item>
+        <item name="colorPrimaryDark">@color/productBackGreen</item>
+        <item name="colorAccent">@color/productBackGreen</item>
+    </style>
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/luckies_guy</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="nav_text_style" parent="Widget.Design.BottomNavigationView">
+        <item name="android:fontFamily">@font/luckies_guy</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

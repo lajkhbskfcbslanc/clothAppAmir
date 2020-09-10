@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupSignin">
+    <Button
+        android:id="@+id/signinSignupClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="x"
+        android:textSize="20sp"
+        android:background="#00000000"
+        android:layout_alignParentRight="true"/>
+    <FrameLayout
+        android:id="@+id/signInFrame"
+        android:layout_width="match_parent"
+        android:layout_above="@id/signInNav"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:background="@color/productBackRed"
+        android:orientation="horizontal"
+        android:id="@+id/signInNav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="10">
+        <Button
+            android:layout_width="0dp"
+            android:background="@color/productBackRed"
+            android:text="sign in"
+            android:id="@+id/signInBtn"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/nav_text_style"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="0dp"
+            android:background="@color/productBackRed"
+            android:text="sign up"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/nav_text_style"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

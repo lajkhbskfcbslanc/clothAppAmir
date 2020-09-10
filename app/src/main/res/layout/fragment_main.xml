@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+    <ImageView
+        android:id="@+id/sekhatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sekhat_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/maintablayout"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/sekhatName"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabSelectedTextColor="@color/colorGreyDark"
+        app:tabTextColor="@color/colorGreyLight"
+        app:tabMaxWidth="200dp"
+        app:tabMinWidth="60dp"
+        app:tabPaddingStart="12dp"
+        app:tabPaddingEnd="16dp"
+        app:tabMode="scrollable"
+        android:paddingLeft="10dp"
+        app:tabTextAppearance="@style/tab_text"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tshirt" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hoodi" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="trousers" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="shoes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="accessory" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="decorative" />
+</com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mainviewpager"
+        android:saveEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maintablayout"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    
+</RelativeLayout>

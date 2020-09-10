@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignIn">
+    <ImageView
+        android:id="@+id/signinBackImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/back_test"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:id="@+id/signInTextHolder"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="#FDABA5"
+            app:errorTextColor="#710106">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailSigninEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/luckies_guy"
+                android:textSize="20sp"
+                android:textColor="#FDABA5"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/colorRedLight"
+            android:textColorHint="#FDABA5"
+            app:errorTextColor="#710106">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordSigninEditText"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/luckies_guy"
+                android:hint="password"
+                android:textColor="#FDABA5"
+                android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/signinForgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="forget password"
+                android:textAppearance="@style/nav_text_style"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:background="#00FFFFFF"
+                android:textColor="#FDABA5"/>
+
+
+    </LinearLayout>
+        <com.hkm.ui.processbutton.FlatButton
+            android:id="@+id/signInSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@color/colorWhite"
+            android:text="sign in"
+            app:pb_textProgress="connecting"
+            app:pb_colorPressed="@color/coloRedDark"
+            android:textAppearance="@style/nav_text_style"
+            android:backgroundTint="@color/productBackRed"
+            android:background="@color/productBackRed"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/signInProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progrssbar_back"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:theme="@style/redAppTheme"/>
+
+    </RelativeLayout>
+</RelativeLayout>
